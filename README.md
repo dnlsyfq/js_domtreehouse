@@ -31,3 +31,18 @@ for(let i = 0; i < 10; i++){
 
 main.innerHTML = html;
 ```
+
+```
+let html = '';
+let randomRGB;
+
+const main = document.querySelector('main');
+const color = function(){return Math.floor(Math.random() * 256)};
+
+for(let i = 0; i < 10; i++){
+  randomRGB = `rgb(${color()}, ${color()}, ${color()})`;
+  html += `<div style="background-color: ${randomRGB}">${i + 1}</div>`
+}
+
+main.innerHTML = html;
+```
