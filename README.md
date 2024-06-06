@@ -15,3 +15,19 @@ for(let i = 0; i < 11; i ++){
 
 main.innerHTML = html;
 ```
+
+---
+
+```
+let html = '';
+let randomRGB;
+
+const main = document.querySelector('main');
+
+for(let i = 0; i < 10; i++){
+  randomRGB = `rgb(${Math.floor(Math.random() * 256)}, ${Math.floor(Math.random() * 256)}, ${Math.floor(Math.random() * 256)})`;
+  html += `<div style="background-color: ${randomRGB}">${i + 1}</div>`
+}
+
+main.innerHTML = html;
+```
